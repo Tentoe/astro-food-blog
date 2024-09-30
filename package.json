@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
+    "@astrojs/mdx": "^3.1.7",
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
     "@astrojs/svelte": "^5.7.0",
@@ -59,6 +60,7 @@
     "@types/markdown-it": "^14.1.2",
     "@types/mdast": "^4.0.4",
     "@types/sanitize-html": "^2.13.0",
+    "leaflet": "^1.9.4",
     "photoswipe": "^5.4.4",
     "remark-github-admonitions-to-directives": "^1.0.5",
     "sass": "^1.77.8",

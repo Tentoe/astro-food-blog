@@ -1,0 +1,24 @@
+---
+tags: [Example, Video]
+category: Examples
+draft: false
+title: 'The greatest post of all time'
+published: 2023-08-01
+author: 'Keven'
+description: 'none'
+---
+
+import Leaflet from "@components/Leaflet.astro";
+
+import testdata from "@data/geo.json" ;
+
+<Leaflet
+  container="leafletmap"
+  latitude={38.737645347842665}
+  longitude={-9.175014374078467}
+  zoom={12}
+  attribution="© <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
+  containerstyle="height: 600px"
+  geojson={JSON.stringify(testdata)}
+/>
+
