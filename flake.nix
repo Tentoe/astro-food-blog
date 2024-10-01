@@ -10,7 +10,11 @@
         let pkgs = nixpkgs.legacyPackages.${system}; in
         {
           devShells.default = pkgs.mkShell {
-            buildInputs = [ pkgs.nodejs_20 ];
+            buildInputs = with pkgs; [
+              nodejs_20
+              python312
+              python312Packages.geojson
+            ];
 
             shellHook = ''
               exec fish
